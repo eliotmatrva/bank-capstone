@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fool Stack Test</title>
+</head>
+<body>
+    <h1>Express Testing with HTML and MongoDB Atlas</h1>
+    <div>
+        <hr>
+        <p>Test creating a user</p>
+        <form id="createUserForm">
+            <input id="newUserName" type="text" name="newUserName" placeholder="name" />
+            <input id="newUserEmail" type="email" name="newUserEmail" placeholder="email" />
+            <input id="newUserPassword" type="password" name="newUserPassword" placeholder="password" />
+            <input id="newUserBalance" type="number" name="newUserBalance" placeholder="account balance" />
+            <input type="submit">
+        </form>
+        <button id="resetCreatedUser">Clear User</button>
+        <p id="displayCreatedUser"></p>    
+    </div>
+    <div>
+        <hr>
+        <p>Test getting a specific user by email</p>
+        <form id="getUserForm">
+            <input id="email" type="email" name="email" placeholder="try jane@mit.edu" />
+            <input type="submit">
+        </form>
+        <button id="resetFindUser">Clear User</button>
+        <p id="displayUser"></p>
+    </div>
+    <div>
+        <hr>
+        <p>Test getting all users</p>
+        <button id="getAllUsers">Click to get all users</button>
+        <button id="resetAllUsers">Clear List</button>
+        <p id="displayAllUsers"></p>    
+    </div>
+    <div>
+        <hr>
+        <p>Test updating a user's balance</p>
+        <form id="updateUserBalanceForm">
+            <input id="updateBalanceEmail" type="email" name="updateBalanceEmail" placeholder="try jane@mit.edu" />
+            <input id="updatedBalance" type="number" name="updatedBalance" placeholder="enter user's new balance" />
+            <input type="submit">
+        </form>
+        <button id="resetServerResponse">Clear Server Response</button>
+        <p id="serverResponse">Server Response</p>
+    </div>
+    <div>
+        <hr>
+        <p>Test deleting a specific user by email</p>
+        <form id="deleteUserForm">
+            <input id="deletedUserEmail" type="email" name="email" placeholder="try jane@mit.edu" />
+            <input type="submit">
+        </form>
+        <button id="resetDeletedUser">Clear User</button>
+        <p id="displayDeletedUser"></p>
+    </div>    
+</body>
+<script defer src="./app.js"></script>
+</html>
